@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google font - Avro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Swiper slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Boostrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <title>Metropolis - Shopify Single page website</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="#">MONOCEROS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-md-auto mx-sm-none">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Versions
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Demo Version</a></li>
+              <li><a class="dropdown-item" href="#">Demo Version</a></li>
+              <li><a class="dropdown-item" href="#">Demo Version</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Informations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Selection</a>
+          </li>
+        </ul>
+        <div class="button-section">
+          <a class="nav-link contact-btn" href="#">Contact</a>
+          <a class="nav-link cart-btn" href="#">Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row hero-section-text">
+        <div class="col-md-5 py-5">
+          <h3 class="hero-heading">Because Wings is for Pegasus</h3>
+          <p class="hero-text">Now the difference between a unicorn and a pegasus is quite clear a unicorn has a horn
+            which usually stores their magically powers while a pegasus can only fly with its gorgeous wings.</p>
+          <a href="#" class="btn btn-green">Discover</a>
+        </div>
+      </div>
+      <div class="row">
+        <a href="#" class="hero-scroll-btn"> Scroll <br><i class="bi bi-arrow-down"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icon box section -->
+  <section class="icon-box-section my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="icon-box">
+            <img class="icon-box-img" src="./assets/printer-img.png" alt="">
+            <h4>3D PRINTED</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+            <a href="#" class="btn btn-green-sm icon-box-btn">More Info</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="icon-box">
+            <img class="icon-box-img" src="./assets/unicorn.png" alt="">
+            <h4>BE UNICORN</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+            <a href="#" class="btn btn-green-sm icon-box-btn">More Info</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="icon-box">
+            <img class="icon-box-img" src="./assets/magic.png" alt="">
+            <h4>LIKE MAGIC</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+            <a href="#" class="btn btn-green-sm icon-box-btn">More Info</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="icon-box">
+            <img class="icon-box-img" src="./assets/stone.png" alt="">
+            <h4>VERY STRONG</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+            <a href="#" class="btn btn-green-sm icon-box-btn">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Single product section -->
+  <section class="single-product-section my-4">
+    <form action="post">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-fluid" src="./assets/product-image.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3 class="single-product-heading">Meet Monoceros
+              the Unicorn</h3>
+            <h5 class="single-product-price my-4">320,00 €</h5>
+            <p class="single-product-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+              Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper
+              suscipit, posuere a, pede.</p>
+            <div class="row my-4">
+              <div class="col-4">
+                <label for="quantity" class="mb-2 single-product-color-label">Color</label>
+                <ul class="single-product-color">
+                  <li><button class="btn bg-danger"></button></li>
+                  <li><button class="btn bg-info"></button></li>
+                  <li><button class="btn bg-dark"></button></li>
+                  <li><button class="btn bg-warning"></button></li>
+                </ul>
+              </div>
+              <div class="col-8">
+                <label for="quantity" class="mb-2 single-product-quantity-label">Quantity</label>
+                <input class="form-control single-product-quantity" type="number" name="quantity" id="quantity" min="1"
+                  value="1">
+              </div>
+            </div>
+            <input type="submit" value="Buy" class="btn buy-btn-sm">
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="container divider">
+    <img src="./assets/Separator.png" alt="">
+  </section>
+
+  <!-- single horse section - Outlined Edition -->
+  <section class="outlined-edition-section my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 outlined-edition-section-text-wrapper">
+          <h4>Outlined <br>Edition</h4>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
+            malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+            <br><br>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
+            dignissim pellentesque felis.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="./assets/single-horse-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid grey-divider">
+    <img class="img-fluid" src="./assets/gray-divider.png" alt="">
+  </section>
+
+  <!-- PREMIUM 3D PRINTER section -->
+  <section class="premium-printer-section">
+    <div class="container">
+      <h6>QUALITY</h6>
+      <h4>PREMIUM 3D PRINTER</h4>
+      <p>Now the difference between a unicorn and a pegasus is quite clear a unicorn has a horn which usually stores
+        their magically powers while a pegasus can only fly with its gorgeous wings. Now the difference between a
+        unicorn and a pegasus is quite clear a unicorn has a horn.</p>
+      <img src="./assets/3d-illustration-premium.png" alt="">
+    </div>
+  </section>
+
+  <section class="container-fluid grey-divider">
+    <img class="img-fluid" src="./assets/grey-divider-bottom.png" alt="">
+  </section>
+
+  <!-- Smooth Edition -->
+  <section class="smooth-edition-section my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 smooth-edition-section-text-wrapper">
+          <h4>Smooth <br>Edition</h4>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
+            malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+            <br><br>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
+            dignissim pellentesque felis.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="./assets/3d-horse-smooth-edition.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image divider -->
+  <section class="container divider">
+    <img src="./assets/Separator.png" alt="">
+  </section>
+
+  <!-- LOWPOLY Section -->
+  <section class="lowpoly-container my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid lowpoly-img" src="./assets/black-frame.png" alt="">
+        </div>
+        <div class="col-md-6 lowpoly-text-part pt-3">
+          <h6>EFFECT</h6>
+          <h4>LOWPOLY</h4>
+          <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.
+            Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan
+            quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider for product carousel section -->
+  <section class="container-fluid grey-divider mt-4">
+    <img class="img-fluid" src="./assets/gray-divider.png" alt="">
+  </section>
+  <!-- product carousel section -->
+  <section class="product-carousel-section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="product-carousel-section-heading">Even more great stuff.</h3>
+          <p class="product-carousel-section-paragraph">Now the difference between a unicorn and a pegasus is quite
+            clear a unicorn has a horn which usually stores their magically powers while a pegasus can only fly with its
+            gorgeous wings.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="swiper">
+      <div class=" swiper-wrapper">
+    
+        <div class="product-carousel swiper-slide">
+          <img src="./assets/single-carousel-product-image.png" alt="">
+          <h3>EMERALD</h3>
+          <a href="#" class="btn ">Buy</a>
+        </div>
+
+        <div class="product-carousel swiper-slide">
+          <img src="./assets/single-carousel-product-image.png" alt="">
+          <h3>BLACK</h3>
+          <a href="#" class="btn ">Buy</a>
+        </div>
+
+        <div class="product-carousel swiper-slide">
+          <img src="./assets/single-carousel-product-image.png" alt="">
+          <h3>WHITE</h3>
+          <a href="#" class="btn ">Buy</a>
+        </div>
+
+        <div class="product-carousel swiper-slide">
+          <img src="./assets/single-carousel-product-image.png" alt="">
+          <h3>NAVY</h3>
+          <a href="#" class="btn ">Buy</a>
+        </div>
+
+        <div class="product-carousel swiper-slide">
+          <img src="./assets/single-carousel-product-image.png" alt="">
+          <h3>EMERALD</h3>
+          <a href="#" class="btn ">Buy</a>
+        </div>
+
+        <div class="product-carousel swiper-slide">
+          <img src="./assets/single-carousel-product-image.png" alt="">
+          <h3>EMERALD</h3>
+          <a href="#" class="btn ">Buy</a>
+        </div>
+
+        <div class="product-carousel swiper-slide">
+          <img src="./assets/single-carousel-product-image.png" alt="">
+          <h3>EMERALD</h3>
+          <a href="#" class="btn ">Buy</a>
+        </div>
+
+        
+
+        
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Two col seperator of last section -->
+
+  <!-- Divider for product carousel section -->
+  <section class="container-fluid grey-divider mt-4">
+    <img class="img-fluid" src="./assets/two-col-separator.png" alt="">
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-lg-3">
+          <a href="/" class="navbar-brand">MONOCEROS</a>
+        </div>
+        <div class="col-lg-2 footer-menu-block">
+          <h4 class="footer-menu-heading">Compagny</h4>
+          <a href="#" class="footer-menu-link">About</a>
+          <a href="#" class="footer-menu-link">Newsroom</a>
+          <a href="#" class="footer-menu-link">Cornelia Leadership</a>
+          <a href="#" class="footer-menu-link">Job Opportunities</a>
+          <a href="#" class="footer-menu-link">Investors</a>
+          <a href="#" class="footer-menu-link">Ethics & Compliance</a>
+          <a href="#" class="footer-menu-link">Events</a>
+        </div>
+        <div class="col-lg-2">
+          <h4 class="footer-menu-heading">Supprt</h4>
+          <a href="#" class="footer-menu-link">About</a>
+          <a href="#" class="footer-menu-link">Newsroom</a>
+          <a href="#" class="footer-menu-link">Cornelia Leadership</a>
+          <a href="#" class="footer-menu-link">Job Opportunities</a>
+          <a href="#" class="footer-menu-link">Investors</a>
+          <a href="#" class="footer-menu-link">Ethics & Compliance</a>
+          <a href="#" class="footer-menu-link">Events</a>
+        </div>
+        <div class="col-lg-2">
+          <h4 class="footer-menu-heading">Store</h4>
+          <a href="#" class="footer-menu-link">About</a>
+          <a href="#" class="footer-menu-link">Newsroom</a>
+          <a href="#" class="footer-menu-link">Cornelia Leadership</a>
+          <a href="#" class="footer-menu-link">Job Opportunities</a>
+          <a href="#" class="footer-menu-link">Investors</a>
+          <a href="#" class="footer-menu-link">Ethics & Compliance</a>
+          <a href="#" class="footer-menu-link">Events</a>
+        </div>
+        <div class="col-lg-2">
+          <h4 class="footer-menu-heading">Subscribe</h4>
+          <a href="#" class="footer-menu-link">About</a>
+          <a href="#" class="footer-menu-link">Newsroom</a>
+          <a href="#" class="footer-menu-link">Cornelia Leadership</a>
+          <a href="#" class="footer-menu-link">Job Opportunities</a>
+          <a href="#" class="footer-menu-link">Investors</a>
+          <a href="#" class="footer-menu-link">Ethics & Compliance</a>
+          <a href="#" class="footer-menu-link">Events</a>
+        </div>
+
+      </div>
+      <div class="row">
+        <hr class="my-4">
+        <p class="copyright-msg">@2021 Cornelio</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

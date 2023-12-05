@@ -1,0 +1,498 @@
+/* Color: lightgreen: #BCDCC4;
+ black: #151515;
+ darkgray: #315C72;
+ font-family: 'Arvo', serif;
+ */
+@font-face {
+     font-family: metropolis;
+     src: url(./assets/metropolis-font/Metropolis-Black.otf);
+     src: url(./assets/metropolis-font/Metropolis-Bold.otf);
+     src: url(./assets/metropolis-font/Metropolis-ExtraBold.otf);
+     src: url(./assets/metropolis-font/Metropolis-Light.otf);
+     src: url(./assets/metropolis-font/Metropolis-Medium.otf);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Arvo', serif;
+     overflow-x: hidden;
+}
+
+.btn-green {
+     padding: 10px 40px;
+     border-radius: 100px;
+     background: #BCDCC4;
+     color: #151515;
+     font-size: 20px;
+     font-family: Metropolis;
+     font-weight: 700;
+}
+
+/* .btn-dark-blue {} */
+
+.btn-green-sm {
+     padding: 7px 15px;
+     border-radius: 100px;
+     background: #BCDCC4;
+     color: #151515;
+     font-size: 16px;
+     font-family: Metropolis;
+     font-weight: 700;
+}
+
+.navbar {
+     position: sticky;
+     top: 0;
+     left: 0;
+     background-color: white;
+     z-index: 9999;
+}
+
+.navbar-brand {
+     color: #151515;
+     text-align: center;
+     font-size: 24px;
+     font-family: Metropolis;
+     font-weight: 800;
+}
+
+.nav-link {
+     color: rgba(21, 21, 21, 0.50);
+     text-align: center;
+     font-size: 14px;
+     font-family: Metropolis;
+     font-weight: 600;
+     margin-left: 10px;
+}
+
+.contact-btn {
+     display: inline-block;
+     padding: 10px 20px;
+     border-radius: 100px;
+     background: #BCDCC4;
+     color: #151515;
+     text-align: center;
+     font-size: 14px;
+     font-family: Metropolis;
+     font-weight: 700;
+}
+
+.cart-btn {
+     display: inline-block;
+     margin-left: 10px;
+     padding: 10px 20px;
+     border-radius: 100px;
+     border: 2px solid #315C72;
+     background: #315C72;
+     color: #FFF;
+     text-align: center;
+     font-size: 14px;
+     font-family: Metropolis;
+     font-weight: 700;
+}
+
+.hero-section {
+     background-image: url(./assets/Background.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+
+.hero-section .container .hero-section-text {
+     display: flex;
+     align-items: center;
+     justify-content: left;
+     max-height: 500px;
+     height: auto;
+     padding: 0 5%;
+}
+
+.hero-heading {
+     color: #315C72;
+     font-size: 64px;
+     font-family: Arvo;
+     font-weight: 700;
+     line-height: 72px;
+}
+
+.hero-text {
+     color: rgba(21, 21, 21, 0.50);
+     font-size: 20px;
+     font-family: Metropolis;
+     line-height: 32px;
+}
+
+.hero-scroll-btn {
+     color: rgba(255, 255, 255, 0.50);
+     font-size: 14px;
+     font-family: Metropolis;
+     font-weight: 600;
+     line-height: 20px;
+     text-transform: uppercase;
+     text-align: center;
+     text-decoration: none;
+}
+
+.hero-scroll-btn i {
+     color: #FFFFFF;
+}
+
+
+.icon-box {
+     border-radius: 12px;
+     background: linear-gradient(45deg, #F1F2F3 0%, rgba(241, 242, 243, 0.50) 100%);
+     backdrop-filter: blur(6px);
+     padding: 64px 32px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     transition: .3s ease-in-out;
+     -webkit-transition: .3s ease-in-out;
+     -moz-transition: .3s ease-in-out;
+     -ms-transition: .3s ease-in-out;
+     -o-transition: .3s ease-in-out;
+}
+
+.icon-box-img {
+     max-width: 65px;
+     width: 100%;
+     margin-bottom: 10px;
+}
+
+.icon-box h4 {
+     color: #151515;
+     text-align: center;
+     font-size: 20px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 30px;
+}
+
+.icon-box p {
+     color: rgba(21, 21, 21, 0.50);
+     text-align: center;
+     font-size: 16px;
+     font-family: Metropolis;
+     line-height: 24px;
+}
+
+.icon-box-btn {
+     display: none;
+     transition: .3s ease-in-out;
+}
+.icon-box-btn:hover {
+     background-color: #315C72;
+     color: #fff;
+}
+.icon-box:hover {
+     background: linear-gradient(45deg, #fff 0%, #fff 100%);
+     box-shadow: 0px 12px 24px 0px rgba(21, 21, 21, 0.06), 0px 24px 48px 0px rgba(21, 21, 21, 0.08);
+}
+
+.icon-box:hover .icon-box-btn {
+     display: inline-block;
+     cursor: pointer;
+}
+
+/* Single product section */
+.single-product-heading {
+     color: #315C72;
+     font-size: 64px;
+     font-family: Arvo;
+     font-weight: 700;
+     line-height: 72px;
+}
+
+.single-product-price {
+     color: #151515;
+     font-size: 56px;
+     font-family: Metropolis;
+     line-height: 72px;
+}
+
+.single-product-description {
+     color: rgba(21, 21, 21, 0.50);
+     font-size: 20px;
+     font-family: Metropolis;
+     line-height: 32px;
+}
+
+.buy-btn-sm {
+     padding: 15px 40px;
+     border-radius: 100px;
+     background: #315C72;
+     color: #FFF;
+     font-size: 20px;
+     font-family: Metropolis;
+     font-weight: 700;
+}
+.buy-btn-sm:hover{
+     background-color: #BCDCC4;
+     color: #000;
+}
+.single-product-quantity-label,
+.single-product-color-label {
+     color: #151515;
+     font-size: 20px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 24px;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+}
+
+.single-product-quantity {
+     border-radius: 8px;
+     border: 2px solid rgba(21, 21, 21, 0.12);
+     color: rgba(21, 21, 21, 0.50);
+     font-size: 20px;
+     font-family: Metropolis;
+     line-height: 32px;
+     text-align: center;
+}
+
+.single-product-color {
+     display: flex;
+     padding-left: 0;
+}
+
+.single-product-color li {
+     list-style-type: none;
+     margin-right: 15px;
+}
+
+.single-product-color li button {
+     padding: 15px;
+     border-radius: 50px;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     -ms-border-radius: 50px;
+     -o-border-radius: 50px;
+}
+
+.single-product-color li button:hover {
+     cursor: pointer;
+     border: 3px solid black;
+}
+
+/* Two section are same, so I use DRY principal here */
+.outlined-edition-section-text-wrapper,
+.smooth-edition-section-text-wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+}
+
+.outlined-edition-section-text-wrapper h4,
+.smooth-edition-section-text-wrapper h4 {
+     color: #315C72;
+     font-size: 64px;
+     font-family: Arvo;
+     font-weight: 700;
+     line-height: 72px;
+}
+
+.outlined-edition-section-text-wrapper p,
+.smooth-edition-section-text-wrapper p {
+     color: rgba(21, 21, 21, 0.50);
+     font-size: 20px;
+     font-family: Metropolis;
+     line-height: 32px;
+}
+
+.grey-divider img {
+     width: 100%;
+}
+.divider img {
+     width: 100%;
+}
+.premium-printer-section {
+     background: linear-gradient(90deg, #F3F4F5 0%, #F8F8F9 100%);
+}
+
+.premium-printer-section .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 40px 0;
+     text-align: center;
+}
+
+.premium-printer-section .container h6 {
+     color: #315C72;
+     text-align: center;
+     font-size: 16px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 24px;
+     letter-spacing: 3.2px;
+     text-transform: uppercase;
+}
+
+.premium-printer-section .container h4 {
+     color: #151515;
+     text-align: center;
+     font-size: 48px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 64px;
+}
+
+.premium-printer-section .container p {
+     color: rgba(21, 21, 21, 0.50);
+     text-align: center;
+     font-size: 22px;
+     font-family: Metropolis;
+     line-height: 32px;
+}
+
+.premium-printer-section .container img {
+     max-width: 70vw;
+     width: 100%;
+}
+
+.lowpoly-img {
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
+}
+
+.lowpoly-text-part h6 {
+     color: #315C72;
+     font-size: 16px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 24px;
+     letter-spacing: 3.2px;
+     text-transform: uppercase;
+}
+
+.lowpoly-text-part h4 {
+     color: #151515;
+     font-size: 48px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 64px;
+}
+
+.lowpoly-text-part p {
+     color: rgba(21, 21, 21, 0.50);
+     font-size: 20px;
+     font-family: Metropolis;
+     line-height: 32px;
+}
+.product-carousel {
+     max-width: 350px;
+     width: 100%;
+}
+.product-carousel-section {
+     background: linear-gradient(315deg, #F1F2F3 0%, rgba(241, 242, 243, 0.50) 100%);
+     padding: 100px 0;
+}
+
+.product-carousel-section-heading {
+     color: #315C72;
+     text-align: center;
+     font-size: 64px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 72px;
+}
+
+.product-carousel-section-paragraph {
+     color: rgba(21, 21, 21, 0.50);
+     text-align: center;
+     font-size: 20px;
+     font-family: Metropolis;
+     line-height: 32px;
+}
+
+.product-carousel {
+     display: flex;
+     padding: 20px auto;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 5px;
+     min-height: 500px;
+}
+.product-carousel:hover {
+     border-radius: 12px;
+background: #FFF;
+box-shadow: 0px 12px 24px 0px rgba(21, 21, 21, 0.06), 0px 24px 48px 0px rgba(21, 21, 21, 0.08);
+backdrop-filter: blur(6px);
+}
+.product-carousel img {
+     max-width: 280px;
+     width: 100%;
+}
+
+.product-carousel h3 {
+     color: #151515;
+     text-align: center;
+     font-size: 28px;
+     font-family: Metropolis;
+     font-weight: 800;
+     line-height: 44px;
+     margin-top: 40px;
+     margin-bottom: 12px;
+}
+
+.product-carousel a {
+     border-radius: 100px;
+     border: 2px solid rgba(21, 21, 21, 0.12);
+     color: #151515;
+     text-align: center;
+     font-size: 16px;
+     font-family: Metropolis;
+     font-weight: 700;
+     padding: 7px 20px;
+}
+.product-carousel a:hover{
+     background-color: #315C72;
+     color: #ffffff;
+}
+.footer-menu-block {
+     margin-right: 30px;
+}
+.footer-menu-heading {
+     color: #315C72;
+font-size: 16px;
+font-family: Metropolis;
+font-weight: 800;
+line-height: 24px;
+letter-spacing: 3.2px;
+text-transform: uppercase;
+}
+.footer-menu-link{
+     text-decoration: none;
+     color: rgba(21, 21, 21, 0.50);
+font-size: 14px;
+font-family: Metropolis;
+line-height: 25px;
+display: block;
+}
+.copyright-msg {
+     color: rgba(21, 21, 21, 0.25);
+text-align: center;
+font-size: 14px;
+font-family: Metropolis;
+line-height: 20px;
+}
+
+/* Slider */
+/* .swiper {
+     width: 600px;
+     height: 300px;
+   } */
